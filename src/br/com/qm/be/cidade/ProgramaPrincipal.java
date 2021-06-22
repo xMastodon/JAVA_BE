@@ -6,17 +6,17 @@ import java.util.List;
 import br.com.qm.be.cidade.dao.CidadeDAO;
 import br.com.qm.be.cidade.pojo.Cidade;
 
-public class ProgramaPrincipal {
-
-	
-	public static void main(String[] args) throws SQLException {
-		
+public class ProgramaPrincipal
+{	
+	public static void main(String[] args) throws SQLException
+	{		
 		CidadeDAO cidadeDAO = new CidadeDAO();
 		
 		List<Cidade> cidades = cidadeDAO.listaCidades();
 		
 		System.out.println("Cidades no BD");
-		for (Cidade cidade : cidades) {
+		for (Cidade cidade : cidades)
+		{
 			System.out.println(cidade);
 		}
 
@@ -32,24 +32,23 @@ public class ProgramaPrincipal {
 		
 		System.out.println("Cidades que começam com A");
 		List<Cidade> cidadesPorComeco = cidadeDAO.listaCidadesPorTexto("A");
-		for (Cidade cidade : cidadesPorComeco) {
+		for (Cidade cidade : cidadesPorComeco)
+		{
 			System.out.println(cidade);
 		}
 		
 		
 		System.out.println("Cidades do estado de SP");
 		List<Cidade> cidadesSP = cidadeDAO.listaCidadesPorSigla("SP");
-		for (Cidade cidade : cidadesSP) {
+		for (Cidade cidade : cidadesSP)
+		{
 			System.out.println(cidade);
-		}
-		
+		}		
 		System.out.println("Capitas presentes do BD");
 		List<Cidade> capitais = cidadeDAO.listaFiltroCapital(true);
-		for (Cidade cidade: capitais) {
+		for (Cidade cidade: capitais)
+		{
 			System.out.println(cidade);
-		}
-		
-		
-	}
-	
+		}		
+	}	
 }

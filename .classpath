@@ -6,7 +6,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Mastodon/Downloads/postgresql-42.2.22.jar">
+	<classpathentry kind="lib" path="C:/Users/Mastodon/eclipse-workspace/java_be/postgresql-42.2.22.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
